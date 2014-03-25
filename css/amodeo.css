@@ -3,3 +3,19 @@
  * Copyright © 2014 Antonio Amodeo
  * Created by Melvin Chien melvin.io
  */
+
+
+.jumbotron-row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+  float: left;
+}
+
+/*
+.jumbotron-orbit img {
+  width: 100%;
+  height: auto;
+}
+*/

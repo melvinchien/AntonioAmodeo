@@ -9,74 +9,83 @@
   <script src="js/vendor/modernizr.js"></script>
 </head>
 <body>
-  <div class="row">
-    <div class="large-3 columns">
-      <h1><img src="http://placehold.it/400x100&text=Logo" /></h1>
-    </div>
-    <div class="large-9 columns">
-      <ul class="right button-group">
-        <li><a href="#" class="button">Link 1</a></li>
-        <li><a href="#" class="button">Link 2</a></li>
-        <li><a href="#" class="button">Link 3</a></li>
-        <li><a href="#" class="button">Link 4</a></li>
+  <!-- Navbar -->
+  <div class="contain-to-grid">
+    <nav class="top-bar" data-topbar>
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#">AMODEO</a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
       </ul>
-    </div>
+
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li><a href="#">ABOUT</a></li>
+          <li class="has-dropdown">
+            <a href="#">PORTFOLIO</a>
+            <ul class="dropdown">
+              <li><a href="#">Producing</a></li>
+              <li><a href="#">Editing</a></li>
+              <li><a href="#">Directing</a></li>
+              <li><a href="#">Screenwriting</a></li>
+              <li><a href="#">Photography</a></li>
+            </ul>
+          </li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+
+        <!-- Left Nav Section -->
+        <ul class="left">
+          <li></li>
+        </ul>
+      </section>
+    </nav>
+  </div>
+  <!-- Jumbotron Slider -->
+  <div class="jumbotron-row">
+    <ul class="jumbotron-orbit" data-orbit>
+      <li>
+        <img src="http://lorempixel.com/1905/612/city" />
+      </li>
+      <li>
+        <img src="http://lorempixel.com/1905/612/nightlife" />
+      </li>
+      <li>
+        <img src="http://lorempixel.com/1905/612/nature" />
+      </li>
+      <li>
+        <img src="http://lorempixel.com/1905/612/transport" />
+      </li>
+      <li>
+        <img src="http://lorempixel.com/1905/612/people" />
+      </li>
+      <li>
+        <img src="http://lorempixel.com/1905/612/business" />
+      </li>
+    </ul>    
+    <hr />
   </div>
 
-  <!-- End Header and Nav -->
-
-  <!-- First Band (Slider) -->
-
-  <div class="row">
-    <div class="large-12 columns">
-      <div id="slider">
-        <img src="http://placehold.it/1000x400&text=[ img 1 ]" />
-      </div>
-
-      <hr />
-    </div>
-  </div>
-
-  <!-- Three-up Content Blocks -->
-
+  <!-- Project Showcase -->
   <div class="row">
     <div class="large-4 columns">
-      <img src="http://placehold.it/400x300&text=[img]" />
-      <h4>This is a content section.</h4>
-      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+      <img src="http://placehold.it/400x300/ccc/25c&text=project+one" />
+      <h4>Some Short Title</h4>
+      <p>That's what you see at a toy store and you must think you're in a toy store, because you're here shopping for an infant named Jeb.</p>
     </div>
 
     <div class="large-4 columns">
-      <img src="http://placehold.it/400x300&text=[img]" />
-      <h4>This is a content section.</h4>
-      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+      <img src="http://placehold.it/400x300/ccc/25c&text=project+two" />
+      <h4>Quick Description</h4>
+      <p>You see? It's curious. Ted did figure it out - time travel. And when we get back, we gonna tell everyone.</p>
     </div>
 
     <div class="large-4 columns">
-      <img src="http://placehold.it/400x300&text=[img]" />
-      <h4>This is a content section.</h4>
-      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-    </div>
-
-  </div>
-
-  <!-- Call to Action Panel -->
-  <div class="row">
-    <div class="large-12 columns">
-
-      <div class="panel">
-        <h4>Get in touch!</h4>
-
-        <div class="row">
-          <div class="large-9 columns">
-            <p>We'd love to hear from you, you attractive person you.</p>
-          </div>
-          <div class="large-3 columns">
-            <a href="#" class="radius button right">Contact Us</a>
-          </div>
-        </div>
-      </div>
-
+      <img src="http://placehold.it/400x300/ccc/25c&text=project+three" />
+      <h4>Headliner</h4>
+      <p>How it's possible, how it's done, what the dangers are. But then why fifty years in the future when the spacecraft encounters a black hole does the computer call it an 'unknown entry event'?</p>
     </div>
   </div>
 
@@ -87,7 +96,7 @@
       <hr />
       <div class="row">
         <div class="large-6 columns">
-          <p>© Copyright no one at all. Go to town.</p>
+          <p>© 2014 Antonio Amodeo</p>
         </div>
         <div class="large-6 columns">
           <ul class="inline-list right">
