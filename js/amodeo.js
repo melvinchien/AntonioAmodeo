@@ -4,13 +4,13 @@
  * Created by Melvin Chien melvin.io
  */
 
- $(document).foundation({
-    orbit: {
-        animation: 'fade',
-        timer_speed: 5000,
-        resume_on_mouseout: true,
-        navigation_arrows: false,
-        slide_number: false,
-        bullets: false
-    }
- });
+ $(document).ready(function() {
+    onResize();
+
+    $(window).resize(onResize);
+});
+
+onResize = function() {
+    $("#hero-container").height($(window).height());
+    $("#hero-image").width($(window).width() / 1.5);
+}
