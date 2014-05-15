@@ -11,6 +11,5 @@
 });
 
 onResize = function() {
-    $("#hero-container").height($(window).height());
-    $("#hero-image").width($(window).width() / 1.5);
+    $("#hero-container").height($("#hero-background").height());
 }
