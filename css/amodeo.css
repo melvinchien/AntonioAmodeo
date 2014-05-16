@@ -4,8 +4,16 @@
  * Created by Melvin Chien melvin.io
  */
 
- body {
-    font-family: 'Roboto', sans-serif;
+ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Roboto", "Open Sans", "Calibri", "Arial", sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.nav-pills-center {
+    display: inline-block;
 }
 
 #hero-container {
@@ -20,18 +28,14 @@
     z-index: -100;
 }
 
-#hero-logo {
-    padding-top: 250px;
+#hero-nav > li > a,
+#hero-nav > li > a:hover {
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 300;
 }
 
-@media (max-width: 991px) {
-    #hero-logo {
-        padding-top: 150px;
-    }
-}
-
-@media (max-width: 767px) {
-    #hero-logo {
-        padding-top: 80px;
-    }
+#hero-nav > li > a:hover,
+#hero-nav > li > a:focus {
+    background-color: #158cba;
 }

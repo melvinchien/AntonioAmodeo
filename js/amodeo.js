@@ -11,5 +11,8 @@
 });
 
 onResize = function() {
-    $("#hero-container").height($("#hero-background").height());
+    var bgHeight = $("#hero-background").height();
+    $("#hero-container").height(bgHeight);
+    $("#hero-logo").css("padding-top", bgHeight * 0.3);    
+    $("#hero-logo").css("padding-bottom", bgHeight * 0.3);
 }
