@@ -6,9 +6,7 @@
 
  $(document).ready(function() {
     onResize();
-
-    // Fix for white space at bottom of hero image
-    $("#hero-container").height($("#hero-background").height());
+    $("#carousel-testimonials").carousel();
 
     $(window).resize(onResize);
 });
