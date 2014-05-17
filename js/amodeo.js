@@ -7,12 +7,15 @@
  $(document).ready(function() {
     onResize();
 
+    // Fix for white space at bottom of hero image
+    $("#hero-container").height($("#hero-background").height());
+
     $(window).resize(onResize);
 });
 
 onResize = function() {
     var bgHeight = $("#hero-background").height();
     $("#hero-container").height(bgHeight);
-    $("#hero-logo").css("padding-top", bgHeight * 0.3);    
-    $("#hero-logo").css("padding-bottom", bgHeight * 0.3);
+    $("#hero-logo").css("margin-top", bgHeight * 0.3);    
+    $("#hero-logo").css("margin-bottom", bgHeight * 0.25);
 }

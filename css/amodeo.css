@@ -4,8 +4,14 @@
  * Created by Melvin Chien melvin.io
  */
 
- body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: "Roboto", "Open Sans", "Calibri", "Arial", sans-serif;
+    font-weight: 300;
+}
+
+body {
+    font-size: 2em;
+    background-color: #F9F9F9;
 }
 
 a:hover {
@@ -20,12 +26,16 @@ a:hover {
     padding-left: 0px;
     padding-right: 0px;
     width: 100%;
-    height: 100%;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
 }
 
 #hero-background {
     position: absolute;
-    z-index: -100;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
 }
 
 #hero-nav > li > a,
@@ -38,4 +48,12 @@ a:hover {
 #hero-nav > li > a:hover,
 #hero-nav > li > a:focus {
     background-color: #158cba;
+}
+
+section.container-fluid {
+    margin-bottom: 2em;
+}
+
+section.container-fluid > .row {
+    margin-bottom: 2em;
 }
