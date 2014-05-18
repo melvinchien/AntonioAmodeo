@@ -7,6 +7,7 @@
  $(document).ready(function() {
     onResize();
     $("#carousel-testimonials").carousel();
+    $(".js-tooltip").tooltip();
 
     $(window).resize(onResize);
 });
