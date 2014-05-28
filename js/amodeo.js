@@ -5,7 +5,18 @@
  */
 
  $(document).ready(function() {
-
+    $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+          }, 500);
+            return false;
+        }
+    }
+});
     $("#carousel-testimonials").carousel();
     $(".js-tooltip").tooltip();
 
@@ -30,10 +41,9 @@
     $(window).resize(onResize);
 });
 
- onResize = function() {
+onResize = function() {
     var bgHeight = $("#hero-background").height();
     $("#hero-container").height(bgHeight);
     $("#hero-logo").css("margin-top", bgHeight * 0.3);    
     $("#hero-logo").css("margin-bottom", bgHeight * 0.25);
-    $("#portfolio-container").isotope("layout");
 }
