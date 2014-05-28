@@ -5,16 +5,26 @@
  */
 
  $(document).ready(function() {
-    onResize();
+
     $("#carousel-testimonials").carousel();
     $(".js-tooltip").tooltip();
 
+    var $portfolio = $("#portfolio-container");
+    $portfolio.imagesLoaded( function() {
+        $portfolio.isotope({
+            itemSelector: ".portfolio-item",
+            layoutMode: "masonry"
+        });
+    });
+    
+    onResize();
     $(window).resize(onResize);
 });
 
-onResize = function() {
+ onResize = function() {
     var bgHeight = $("#hero-background").height();
     $("#hero-container").height(bgHeight);
     $("#hero-logo").css("margin-top", bgHeight * 0.3);    
     $("#hero-logo").css("margin-bottom", bgHeight * 0.25);
+    $("#portfolio-container").isotope("layout");
 }

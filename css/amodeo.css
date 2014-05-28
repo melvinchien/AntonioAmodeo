@@ -65,6 +65,10 @@ img#hero-background {
     display: inline-block;
 }
 
+.portfolio-item {
+    margin-bottom: 1.8em;
+}
+
 section.container-fluid {
     padding-bottom: 2em;
     padding-top: 2em;
