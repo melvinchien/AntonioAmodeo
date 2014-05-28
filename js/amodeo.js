@@ -16,7 +16,16 @@
             layoutMode: "masonry"
         });
     });
-    
+
+    $("#portfolio-filters").on("click", "button", function() {
+        var filterValue = $(this).attr("data-filter");
+        $("#portfolio-filters > .active").removeClass("active");
+        $(this).addClass("active");
+        $portfolio.isotope({
+            filter: filterValue
+        });
+    });
+
     onResize();
     $(window).resize(onResize);
 });

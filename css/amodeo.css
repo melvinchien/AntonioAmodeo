@@ -18,8 +18,27 @@ a:hover {
     text-decoration: none;
 }
 
+.btn-default {
+   background-color: #777;
+   border-color: #777;
+}
+
+.btn-default.active,
+.btn-default:focus,
+.btn-default:active {
+   background-color: #158cba;
+   border-color: #158cba;
+
+}
+
+.btn-default:hover {
+   background-color: #555;
+   border-color: #555;
+
+}
+
 .carousel-control {
-    color: #888;
+    color: #555;
 }
 
 .carousel-control:hover {
