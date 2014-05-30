@@ -1,4 +1,4 @@
-/*
+﻿/*
  * AntonioAmodeo v0.1
  * Copyright © 2014 Antonio Amodeo
  * Created by Melvin Chien melvin.io
@@ -86,6 +86,11 @@ img#hero-background {
 
 .portfolio-item {
     margin-bottom: 1.8em;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 section.container-fluid {
