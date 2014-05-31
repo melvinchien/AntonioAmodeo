@@ -5,29 +5,23 @@
  */
 
  $(document).ready(function() {
-    $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top
-          }, 500);
-            return false;
-        }
-    }
-});
+    onResize();
+    $(window).resize(onResize);
+
+    // ENABLE BOOTSTRAP CAROUSEL AND TOOLTIPS
     $("#carousel-testimonials").carousel();
     $(".js-tooltip").tooltip();
 
+    // ENABLE ISOTOPE
     var $pf = $("#pf-container");
     $pf.imagesLoaded( function() {
         $pf.isotope({
             itemSelector: ".pf-item",
-            layoutMode: "masonry"
+            layoutMode: "fitRows"
         });
     });
 
+    // BIND ISOTOPE FILTERS
     $("#pf-filters").on("click", ".js-filter", function() {
         var filterValue = $(this).attr("data-filter");
         $(".js-filter.active").removeClass("active");
@@ -37,12 +31,25 @@
         });
     });
 
-    onResize();
-    $(window).resize(onResize);
-    alert($("iframe").count());
-    alert($("iframe").length);
+    // SMOOTH SCROLLING
+    $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+                $('html,body').animate({
+                  scrollTop: target.offset().top
+              }, 500);
+                return false;
+            }
+        }
+    });
+
+    // RESET VIDEOS
+    // TODO
 });
 
+// ADJUSTS SIZE OF HERO UNIT
 onResize = function() {
     var bgHeight = $("#hero-background").height();
     $("#hero-container").height(bgHeight);
