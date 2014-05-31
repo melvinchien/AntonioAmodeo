@@ -28,9 +28,9 @@
         });
     });
 
-    $("#portfolio-filters").on("click", "button", function() {
+    $("#portfolio-filters").on("click", ".js-filter", function() {
         var filterValue = $(this).attr("data-filter");
-        $("#portfolio-filters > .active").removeClass("active");
+        $(".js-filter.active").removeClass("active");
         $(this).addClass("active");
         $portfolio.isotope({
             filter: filterValue

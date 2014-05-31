@@ -48,7 +48,7 @@
     </div>
   </div>
   <section class="container-fluid" id="hero-container">
-  <img id="hero-background" class="img-responsive" src="img/viewfinder-vibe.min.jpg" alt="Antonio Amodeo">
+    <img id="hero-background" class="img-responsive" src="img/viewfinder-vibe.min.jpg" alt="Antonio Amodeo">
     <div class="row">
       <div class="col-xs-10 col-xs-offset-1">
         <img id="hero-logo" class="img-responsive" src="img/amodeo_logo_6.png" alt="Antonio Amodeo">
@@ -92,12 +92,27 @@
       <div class="row">
         <div class="col-md-offset-2 col-md-8 text-center">
           <div class="btn-group" id="portfolio-filters">
-            <button type="button" class="btn btn-default active" data-filter="*">All</button>
-            <button type="button" class="btn btn-default" data-filter=".portfolio-editing">Editing</button>
-            <button type="button" class="btn btn-default" data-filter=".portfolio-directing">Directing</button>
-            <button type="button" class="btn btn-default" data-filter=".portfolio-producing">Producing</button>
-            <button type="button" class="btn btn-default" data-filter=".portfolio-screenwriting">Screenwriting</button>
-            <button type="button" class="btn btn-default" data-filter=".portfolio-photography">Photography</button>
+            <div class="btn-group visible-xs">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" data-filter="">
+                Projects
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="javascript:;" class="js-filter" data-filter=".portfolio-editing">Editing</a></li>
+                <li><a href="javascript:;" class="js-filter" data-filter=".portfolio-directing">Directing</a></li>
+                <li><a href="javascript:;" class="js-filter" data-filter=".portfolio-producing">Producing</a></li>
+                <li><a href="javascript:;" class="js-filter" data-filter=".portfolio-screenwriting">Screenwriting</a></li>
+                <li><a href="javascript:;" class="js-filter" data-filter=".portfolio-photography">Photography</a></li>
+              </ul>
+            </div>
+            <div class="hidden-xs">
+              <button type="button" class="btn btn-default js-filter active" data-filter="*">All</button>
+              <button type="button" class="btn btn-default js-filter" data-filter=".portfolio-editing">Editing</button>
+              <button type="button" class="btn btn-default js-filter" data-filter=".portfolio-directing">Directing</button>
+              <button type="button" class="btn btn-default js-filter" data-filter=".portfolio-producing">Producing</button>
+              <button type="button" class="btn btn-default js-filter" data-filter=".portfolio-screenwriting">Screenwriting</button>
+              <button type="button" class="btn btn-default js-filter" data-filter=".portfolio-photography">Photography</button>
+            </div>
           </div>
         </div>
       </div>
