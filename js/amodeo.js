@@ -20,19 +20,19 @@
     $("#carousel-testimonials").carousel();
     $(".js-tooltip").tooltip();
 
-    var $portfolio = $("#portfolio-container");
-    $portfolio.imagesLoaded( function() {
-        $portfolio.isotope({
-            itemSelector: ".portfolio-item",
+    var $pf = $("#pf-container");
+    $pf.imagesLoaded( function() {
+        $pf.isotope({
+            itemSelector: ".pf-item",
             layoutMode: "masonry"
         });
     });
 
-    $("#portfolio-filters").on("click", ".js-filter", function() {
+    $("#pf-filters").on("click", ".js-filter", function() {
         var filterValue = $(this).attr("data-filter");
         $(".js-filter.active").removeClass("active");
         $(this).addClass("active");
-        $portfolio.isotope({
+        $pf.isotope({
             filter: filterValue
         });
     });

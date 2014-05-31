@@ -85,8 +85,12 @@ img#hero-background {
     display: inline-block;
 }
 
-.portfolio-item {
+.pf-item {
     margin-bottom: 1.8em;
+}
+
+.pf-item:hover {
+    cursor: pointer;
 }
 
 .row {
