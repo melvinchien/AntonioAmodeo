@@ -39,6 +39,8 @@
 
     onResize();
     $(window).resize(onResize);
+    alert($("iframe").count());
+    alert($("iframe").length);
 });
 
 onResize = function() {
