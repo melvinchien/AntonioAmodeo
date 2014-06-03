@@ -8,8 +8,12 @@
     onResize();
     $(window).resize(onResize);
 
-    // ENABLE BOOTSTRAP CAROUSEL AND TOOLTIPS
-    $("#carousel-testimonials").carousel();
+    // ENABLE BOOTSTRAP CAROUSEL
+    $("#carousel-testimonials").carousel({
+        interval: "10000"
+    });
+
+    // ENABLE BOOTSTRAP TOOLTIPS
     $(".js-tooltip").tooltip();
 
     // ENABLE ISOTOPE
