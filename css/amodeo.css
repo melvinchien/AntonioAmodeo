@@ -106,10 +106,6 @@ img#hero-background {
     z-index: -1;
 }
 
-.img-rounded {
-    border-radius: 50%;
-}
-
 .nav-pills-center {
     display: inline-block;
 }
