@@ -60,3 +60,4 @@ onResize = function() {
     $("#hero-logo").css("margin-top", bgHeight * 0.3);    
     $("#hero-logo").css("margin-bottom", bgHeight * 0.25);
 }
+
