@@ -1,5 +1,5 @@
 /*!
- * AntonioAmodeo v0.1
+ * AntonioAmodeo v2.0
  * Copyright © 2014 Antonio Amodeo
  * Created by Melvin Chien melvin.io
  */
@@ -63,4 +63,3 @@ onResize = function() {
     $("#hero-logo").css("margin-top", bgHeight * 0.3);    
     $("#hero-logo").css("margin-bottom", bgHeight * 0.25);
 }
-
